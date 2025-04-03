@@ -1,0 +1,9 @@
+Package: com.yourname.alerttweak
+Name: AlertTweak
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: 显示一个简单的弹窗
+Maintainer: Your Name
+Author: Your Name
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
