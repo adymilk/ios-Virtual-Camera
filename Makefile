@@ -11,8 +11,9 @@ include $(THEOS)/makefiles/common.mk
 TWEAK_NAME = AlertTweak
 
 AlertTweak_FILES = Tweak.xm
-AlertTweak_CFLAGS = -fobjc-arc -Wno-deprecated-declarations
-AlertTweak_FRAMEWORKS = UIKit Foundation MediaPlayer
+AlertTweak_CFLAGS = -fobjc-arc -Wno-deprecated-declarations -Wno-unused-function -Wno-unused-variable
+AlertTweak_FRAMEWORKS = UIKit Foundation MediaPlayer AVFoundation
+AlertTweak_PRIVATE_FRAMEWORKS = MediaToolbox
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
